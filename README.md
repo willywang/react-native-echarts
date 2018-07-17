@@ -1,4 +1,4 @@
-# native-echarts
+# gf-rn-echarts
 
 [![NPM Version](https://img.shields.io/npm/v/native-echarts.svg?style=flat)](https://www.npmjs.org/package/gf-rn-echarts)
   [![npm](https://img.shields.io/npm/dm/native-echarts.svg?style=flat)](https://www.npmjs.org/package/gf-rn-echarts)
