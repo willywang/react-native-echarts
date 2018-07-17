@@ -8,7 +8,7 @@
 
 ## install
 
-$ npm install native-echarts --save
+$ npm install gf-rn-echarts --save
 
 ## Usage
 
