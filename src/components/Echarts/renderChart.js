@@ -1,4 +1,3 @@
-import echarts from './echarts.min';
 import toString from '../../util/toString';
 
 export default function renderChart(props) {
@@ -27,4 +26,5 @@ export default function renderChart(props) {
       window.postMessage(paramsString);
     });
   `
+
 }
