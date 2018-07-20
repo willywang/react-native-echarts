@@ -1,4 +1,4 @@
-export const html = function (url) {
+export const html = function (sourceUrl) {
 
   return `
 <!DOCTYPE html>
@@ -21,20 +21,7 @@ export const html = function (url) {
         height: 100%;
       }
     </style>
-    <script>
-    window.onerror = function (msg, url, line, col, error) {
-      if (typeof msg === 'object') {
-        msg = JSON.stringify(msg);
-      }
-      if (error) {
-        error = error.stack.toString();
-      }
-      var data = [msg, error, url, line, col].join('|');
-      var image = new Image();
-      image.src = 'https://store.gf.com.cn/super/api/report/info?xxx=' + data;
-    }
-    </script>
-    <script src="${url}"></script>
+    <script src="${sourceUrl}"></script>
   </head>
   
   <body>

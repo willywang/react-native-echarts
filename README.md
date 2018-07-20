@@ -16,7 +16,8 @@ The Usage is complete consistent with Echarts
 
 component props:
 
-* *option* (object): The option for echarts: [Documentation](http://echarts.baidu.com/option.html#title)。 
+* *echartUrl* (string): The url of echarts code file, it may be a cdn address.
+* *option* (object): The option for echarts: [Documentation](http://echarts.baidu.com/option.html#title).
 * *width* (number): The width of the chart. The default value is the outer container width. 
 * *height* (number): The height of the chart. The default value is 400. 
 
@@ -32,6 +33,7 @@ import {
 import Echarts from 'native-echarts';
 
 export default class app extends Component {
+  const echartUrl = 'https://cdn.bootcss.com/echarts/3.3.2/echarts.min.js';
   render() {
     const option = {
       title: {
@@ -52,7 +54,7 @@ export default class app extends Component {
       }]
     };
     return (
-      <Echarts option={option} height={300} />
+      <Echarts echartUrl={echartUrl} option={option} height={300} />
     );
   }
 }
