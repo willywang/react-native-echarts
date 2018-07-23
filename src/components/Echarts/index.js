@@ -22,9 +22,14 @@ export default class App extends Component {
   }
 
   render() {
-    const source = {
-      html: html(this.props.echartUrl)
-    };
+    let source;
+    if (Platform.OS == 'ios') {
+      source = require('./tpl.html');
+    } else {
+      source = {
+        html: html(this.props.echartUrl)
+      };
+    }
     return (
       <View style={{ flex: 1, height: this.props.height || 400, }}>
         <WebView

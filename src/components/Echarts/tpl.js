@@ -25,8 +25,7 @@ export const html = function (sourceUrl) {
   </head>
   
   <body>
-    <div id="main" >
-    </div>
+    <div id="main"></div>
   <body>
 <html>
 `;
